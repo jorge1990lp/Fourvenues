@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Implementación de Tailwinds -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Prueba Fourvenues</title>
+</head>
+
+<body>
+    <div class="principal h-screen w-screen"></div>
+
+    <script type="text/javascript">
+        var jqueryScript = document.createElement("script");
+        jqueryScript.type = "text/javascript";
+        jqueryScript.src = "https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js";
+
+        jqueryScript.onload = function() {
+            var mainScript = document.createElement("script");
+            mainScript.type = "text/javascript";
+            mainScript.src = "main.js";
+
+            mainScript.onload = function() {
+                inicializar();
+            }
+            document.getElementsByTagName('head')[0].appendChild(mainScript);
+        }
+
+        document.getElementsByTagName('head')[0].appendChild(jqueryScript);
+    </script>
+</body>
+
+</html>
